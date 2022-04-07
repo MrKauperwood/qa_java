@@ -1,4 +1,4 @@
-package com.example.lion;
+package com.example;
 
 import com.example.Lion;
 import org.junit.Test;
@@ -33,7 +33,8 @@ public class LionParameterizedTest {
 
     @Test
     public void doesHaveManeTest() throws Exception {
-        Lion lion = new Lion(checkedText);
+        Feline feline = new Feline();
+        Lion lion = new Lion(checkedText, feline);
         assertEquals(expected, lion.hasMane);
     }
 
